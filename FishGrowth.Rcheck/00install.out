@@ -1,0 +1,9 @@
+* installing *source* package ‘FishGrowth’ ...
+** R
+** byte-compile and prepare package for lazy loading
+** help
+Warning: /Users/KatieZinn/Desktop/Desktop2/Classes/Stat 545/HW7/FishGrowth.Rcheck/00_pkg_src/FishGrowth/man/instantaneous_growth.Rd:18: unexpected TEXT ' result (for ', expecting '{'
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (FishGrowth)

@@ -1,0 +1,45 @@
+---
+title: "Growth Vignette"
+author: "Katie Zinn"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Vignette Info
+
+Hello! I am going to show you some examples of using my package.
+I realize that my package only has one function, but it is a function with 3 variables which makes it package-worthy in my opinion. Also... this package is a package that I can directly apply to my research, and that makes this assignment useful for me.
+
+Here is a practical example of me using the function `instantaneous_growth()`
+
+
+
+## Examples
+
+Say we have a fish that is 132 mm long. We release the fish and recapture it 10 days later and find that it is now 154 mm long. We would use the function in the following way to get a growth of 1.54 % length gain per day.
+
+```{r}
+library(FishGrowth)
+instantaneous_growth(154, 132, 10)
+```
+
+
+If we want to use this calculation over a whole data set this is what we would do. Note that I am using the dataset I loaded into the package as an example. This is a real data snippet from my summer of field work. 
+
+```{r}
+library(FishGrowth)
+instantaneous_growth(Fish_data$fn_ln, Fish_data$in_ln, Fish_data$days)
+```
+
